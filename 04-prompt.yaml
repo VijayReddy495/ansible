@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars_prompt:
-  -  name: username
-     prompt: what is username ?
-     duration: 40hrs
-     private: false
+  - name: username
+    prompt: what is username ?
+    duration: 40hrs
+    private: false
   
   tasks:
   - name: Print details
