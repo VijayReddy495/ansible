@@ -1,0 +1,17 @@
+- name: variables from prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  -  name: username
+     prompt: what is username ?
+     duration: 40hrs
+  
+  tasks:
+  - name: Print details
+    ansible.builtin.debug:
+      msg: "username is {{ username }}"
+
+  
+
+
+
