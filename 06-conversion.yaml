@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    technologies: java,devops,ansible,python
+    technologies: java, devops, ansible, python
   tasks:
   - name: default variables
     ansible.builtin.debug:
