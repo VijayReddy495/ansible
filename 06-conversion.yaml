@@ -1,0 +1,14 @@
+- name: string conversion 
+  hosts: local
+  connection: local
+  vars:
+    technologies: java,devops,ansible,python
+  tasks:
+  - name: default variables
+    ansible.builtin.debug:
+     msg: "Hello ,{{ name | default('ramesh') }}"
+
+  tasks:
+  - name: convert string to list
+    ansible.builtin.debug:
+     msg:"technologies are :{{ technologies | split(',') }}"   
